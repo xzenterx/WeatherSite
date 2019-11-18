@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<header>
+    <h1>WeatherSite</h1>
+</header>
+
+<body>
+
+    <script src="chart.js-2.8.0/package/dist/Chart.js"></script>
+    <div class="scene">
+        <div data-speed="10" class="layer layer-bg"></div>
+        <div data-speed="20" class="layer layer-1"></div>
+        <div data-speed="50" class="layer layer-2"></div>
+        <div data-speed="80" class="layer layer-3"></div>
+    </div>
+
+
+    <div class="search">
+        <form>
+            <input type="text" placeholder="Search...">
+            <button type="submit"><img src="img/search-icon.png"></button>
+        </form>
+    </div>
+
+
+    <div class="content">
+        <div class="weather-block1">
+            <img class="main-weather-img" src="img/011-cloud.png">
+            <h2 style="font-size: 30px">Krasnohrad</h2>
+            <p>July 18th, Sun</p>
+            <p>22&#8451;/14&#8451;</p>
+
+            <canvas id="block1" width="375" height="175"></canvas>
+            <script src="scripts/blockL_chart.js"></script>
+        </div>
+
+        <div class="weather-block2">
+
+            <div class="block-left">
+                <div class="block-day">
+                    <div class="block-text">
+                        <h3>Mon</h3>
+                        <p>July 18th</p>
+                        <p>22&#8451;/14&#8451;</p>
+                    </div>
+                    <div class="block-img">
+                        <img class="week-weather-img" src="img/011-cloud.png">
+                    </div>
+                </div>
+
+                <hr width="80%" size="1px" color="#000008" />
+
+                <div class="block-day">
+                    <div class="block-text">
+                        <h3>Mon</h3>
+                        <p>July 18th</p>
+                        <p>22&#8451;/14&#8451;</p>
+                    </div>
+                    <div class="block-img">
+                        <img class="week-weather-img" src="img/011-cloud.png">
+                    </div>
+                </div>
+
+                <hr width="80%" size="1px" color="#000008" />
+
+                <div class="block-day">
+                    <div class="block-text">
+                        <h3>Mon</h3>
+                        <p>July 18th</p>
+                        <p>22&#8451;/14&#8451;</p>
+                    </div>
+                    <div class="block-img">
+                        <img class="week-weather-img" src="img/011-cloud.png">
+                    </div>
+                </div>
+            </div>
+
+            <div style="height:300px; border: 0.5px solid #000008; margin: 5px;"></div>
+
+            <div class="block-right">
+                <div class="block-day">
+                    <div class="block-text">
+                        <h3>Mon</h3>
+                        <p>July 18th</p>
+                        <p>22&#8451;/14&#8451;</p>
+                    </div>
+                    <div class="block-img">
+                        <img class="week-weather-img" src="img/011-cloud.png">
+                    </div>
+                </div>
+                
+                <hr width="80%" size="1px" color="#000008" />
+
+                <div class="block-day">
+                    <div class="block-text">
+                        <h3>Mon</h3>
+                        <p>July 18th</p>
+                        <p>22&#8451;/14&#8451;</p>
+                    </div>
+                    <div class="block-img">
+                        <img class="week-weather-img" src="img/011-cloud.png">
+                    </div>
+                </div>
+
+                <hr width="80%" size="1px" color="#000008" />
+
+                <div class="block-day">
+                    <div class="block-text">
+                        <h3>Mon</h3>
+                        <p>July 18th</p>
+                        <p>22&#8451;/14&#8451;</p>
+                    </div>
+                    <div class="block-img">
+                        <img class="week-weather-img" src="img/011-cloud.png">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
